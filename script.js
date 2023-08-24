@@ -39,3 +39,11 @@ function nextCard() {
 question.addEventListener("click", flipCard);
 answer.addEventListener("click", flipCard);
 next.addEventListener("click", nextCard);
+
+document.addEventListener("DOMContentLoaded", function() {
+  const autofocusButtons = document.querySelectorAll(".card-front[autofocus], .card-back[autofocus]");
+
+  autofocusButtons.forEach(button => {
+    button.blur();
+  });
+});
