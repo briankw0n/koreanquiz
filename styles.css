@@ -36,6 +36,10 @@ body {
   transition: transform 0.5s;
 }
 
+.card button {
+  border: none;
+}
+
 .card.flipped {
   transform: rotateY(180deg);
 }
